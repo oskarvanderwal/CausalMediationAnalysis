@@ -12,10 +12,7 @@ package_data = \
 {'': ['*']}
 
 install_requires = \
-['fire>=0.4.0,<0.5.0',
- 'torch>=1.12.1,<2.0.0',
- 'tqdm>=4.64.1,<5.0.0',
- 'transformers>=4.23.1,<5.0.0']
+['torch>=1.12.1,<2.0.0', 'tqdm>=4.64.1,<5.0.0', 'transformers>=4.23.1,<5.0.0']
 
 setup_kwargs = {
     'name': 'causalmediationanalysis',
