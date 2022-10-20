@@ -20,11 +20,11 @@ from causalmediationanalysis.transformers_modified.modeling_transfo_xl import Tr
 from causalmediationanalysis.transformers_modified.modeling_xlnet import XLNetLMHeadModel
 from causalmediationanalysis.transformers_modified.modeling_distilbert import DistilBertForMaskedLM
 
-from attention_intervention_model import (
+from causalmediationanalysis.attention_intervention_model import (
     AttentionOverride, TXLAttentionOverride, XLNetAttentionOverride,
     BertAttentionOverride, DistilBertAttentionOverride
 )
-from utils import batch, convert_results_to_pd
+from causalmediationanalysis.utils import batch, convert_results_to_pd
 
 np.random.seed(1)
 torch.manual_seed(1)
