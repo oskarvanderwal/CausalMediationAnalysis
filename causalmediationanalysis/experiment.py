@@ -16,9 +16,9 @@ from transformers import (
     RobertaForMaskedLM, RobertaTokenizer
 )
 
-from transformers_modified.modeling_transfo_xl import TransfoXLLMHeadModel
-from transformers_modified.modeling_xlnet import XLNetLMHeadModel
-from transformers_modified.modeling_distilbert import DistilBertForMaskedLM
+from causalmediationanalysis.transformers_modified.modeling_transfo_xl import TransfoXLLMHeadModel
+from causalmediationanalysis.transformers_modified.modeling_xlnet import XLNetLMHeadModel
+from causalmediationanalysis.transformers_modified.modeling_distilbert import DistilBertForMaskedLM
 
 from attention_intervention_model import (
     AttentionOverride, TXLAttentionOverride, XLNetAttentionOverride,
