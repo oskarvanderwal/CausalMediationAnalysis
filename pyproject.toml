@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "causalmediationanalysis"
+version = "0.1.0"
+description = "Code for for the paper Causal Mediation Analysis for Interpreting Neural NLP: The Case of Gender Bias"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [
+    { include = "causalmediationanalysis" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+transformers = "^4.23.1"
+scipy = "^1.9.3"
+pandas = "^1.5.1"
+fire = "^0.4.0"
+tqdm = "^4.64.1"
+torch = "^1.12.1"
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.2.2"
+pathlib = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
