@@ -2,18 +2,18 @@
 from setuptools import setup
 
 packages = \
-['causalmediationanalysis', 'causalmediationanalysis.transformers_modified']
+['causalmediationanalysis',
+ 'causalmediationanalysis.experiment_data',
+ 'causalmediationanalysis.transformers_modified',
+ 'causalmediationanalysis.winobias_data',
+ 'causalmediationanalysis.winogender_data']
 
 package_data = \
-{'': ['*'],
- 'causalmediationanalysis': ['experiment_data/*',
-                             'winobias_data/*',
-                             'winogender_data/*']}
+{'': ['*']}
 
 install_requires = \
 ['fire>=0.4.0,<0.5.0',
  'pandas>=1.5.1,<2.0.0',
- 'scipy>=1.9.3,<2.0.0',
  'torch>=1.12.1,<2.0.0',
  'tqdm>=4.64.1,<5.0.0',
  'transformers>=4.23.1,<5.0.0']
